@@ -1,3 +1,3 @@
 # xcrun+
 
-A project to run multiple commands on iOS simulators
+A project to run command on multiple iOS simulator devices
