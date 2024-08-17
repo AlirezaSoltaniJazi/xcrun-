@@ -20,7 +20,7 @@ do
         xcrun simctl "$FIRST_ARG" "$uuid" "$SECOND_ARG"
         echo App with BundleID: "$SECOND_ARG" has been uninstalled from device: "$uuid"
       else
-        echo BundleID is null!
+        echo BundleID is null! [ex: xcrun+.sh uninstall "bundle_id"]
         break
       fi
     elif [ "$FIRST_ARG" = "version" ]
@@ -31,11 +31,12 @@ do
         echo "$version_string"
         break
       else
-        echo Path is null!
+        echo Path is null! [ex: xcrun+.sh version "path"]
         break
       fi
     else
-      echo Command is not supported!
+      echo Command is not valid! available commands: ["uninstall":"To uninstall app", "version":"To get app version from .app file"]
+      break
     fi
   fi
 done
