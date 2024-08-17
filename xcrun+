@@ -23,8 +23,7 @@ do
         echo BundleID is null!
         break
       fi
-    fi
-    if [ "$FIRST_ARG" = "version" ]
+    elif [ "$FIRST_ARG" = "version" ]
     then
       if [ ! "$SECOND_ARG" = "" ]
       then
@@ -35,6 +34,8 @@ do
         echo Path is null!
         break
       fi
+    else
+      echo Command is not supported!
     fi
   fi
 done
