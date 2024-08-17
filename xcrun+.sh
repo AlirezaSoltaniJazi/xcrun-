@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Examples
-# ./xcrun+ list
-# ./xcrun+ uninstall "cloud.vitrin.ios"
-# ./xcrun+ uninstall "com.facebook.WebDriverAgentRunner.xctrunner"
+# ./xcrun+.sh list
+# ./xcrun+.sh uninstall "cloud.vitrin.ios"
+# ./xcrun+.sh uninstall "com.facebook.WebDriverAgentRunner.xctrunner"
 
 FIRST_ARG=$1
 SECOND_ARG=$2
